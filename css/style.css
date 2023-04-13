@@ -217,7 +217,6 @@ body {
       width: 500px;
       overflow-x: hidden;
       overflow-y: scroll;
-      transform-origin: 40% 20%;
       transform: scale(0.90);
     }
 
@@ -232,6 +231,7 @@ body {
       min-width: 460px;
       min-height: 230px;
       border-radius: 10px;
+      box-shadow: none;
     }
 
     .item:hover img {
@@ -246,7 +246,7 @@ body {
   }
 
   .items {
-    transform-origin: 25% 20%;
+    transform-origin: 15% 20%;
     transform: scale(0.80);
   }
 }
