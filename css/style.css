@@ -72,7 +72,7 @@ footer a:hover {
   padding-top: 6rem;
 }
 
-.workContainer  h2 {
+.workContainer h2 {
   color: #fff;
   font-size: 8em;
   position: absolute;
@@ -211,7 +211,44 @@ body {
 /* ADDITIONAL STYLES
 /*******************************************/
 @media all and (max-width: 550px) {
+  @supports(display: grid) {
+    .items {
+      height: 500px;
+      width: 500px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      transform-origin: 40% 20%;
+      transform: scale(0.90);
+    }
 
+    .item {
+      display: flex;
+      height: 240px;
+      width: 450px;
+      margin: 1.5em 0.5em;
+    }
+
+    .item img {
+      min-width: 460px;
+      min-height: 230px;
+      border-radius: 10px;
+    }
+
+    .item:hover img {
+      transform: scale(1)
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .workContainer h2{
+    left: 13rem;
+  }
+
+  .items {
+    transform-origin: 25% 20%;
+    transform: scale(0.80);
+  }
 }
 
 
